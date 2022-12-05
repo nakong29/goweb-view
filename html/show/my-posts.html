@@ -1,0 +1,274 @@
+<!-- 내 게시글 관리 화면 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <title>my-posts</title>
+    <style>
+        h3 {
+            text-align: center;
+            margin: 1.5rem;
+        }
+        .card-img-top {
+            height: 15rem;
+            object-fit: cover;
+        }
+        .card-body {
+        height: 10rem;
+        object-fit: cover;
+        }
+        a {
+        text-decoration-line: none;
+        color: #D0B8A8;
+        }
+        a:hover {
+            color: gray;
+        }
+        .page-link {
+            color: #D0B8A8;
+        }
+        .page-link:hover {
+            background-color: #D0B8A8;
+            color: white;
+        }
+        nav {
+            margin: 1rem;
+        }
+        .btn-post-add {
+            background-color: #D0B8A8;
+            color: white;
+        }
+        .my-posts-btn-group {
+            text-align: center;
+        }
+        .btn-update {
+            background-color: #D0B8A8;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+              슬기로운 자취생활
+            </a>
+      
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark"><span style="color:#D0B8A8;">자랑공간</span></a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">꿀팁공간</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">대화공간</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">질문공간</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">내 정보</a></li>
+            </ul>
+      
+            <div class="col-md-3 text-end">
+              정다은님,
+              <button type="button" class="btn btn-logout me-2">Logout</button>
+            </div>
+        </header>
+    </div>
+      <!-- content -->
+      <div class="container">
+        <div class="my-posts-header">
+            <h3>My Space</h3>
+            <div class="my-posts-btn-group">
+                <a href="add-room.html" class="btn btn-post-add">Add My Room</a>
+                <a href="add-food.html" class="btn btn-post-add">Add My Food</a>
+            </div>
+        </div>
+        <div class="my-posts-content">
+            <div class="show-content">
+                <!-- row1 -->
+                <div class="row">
+                  <div class="col">
+                    <!-- 자취방 자랑 -->
+                    <div class="show-room">
+                      <h3>ROOM</h3>
+                      <div class="card-group">
+                        <div class="card">
+                          <img src="/img/home.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title"><a href="#">따뜻한 내 방</a></h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          </div>
+                          <div class="card-footer">
+                            <button type="button" class="btn btn-update">게시글 수정</button>
+                          </div>
+                          
+                        </div>
+                        <div class="card">
+                          <img src="/img/room.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title"><a href="#">나만의 작은 공간</a></h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          </div>
+                          <div class="card-footer">
+                            <button type="button" class="btn btn-update">게시글 수정</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 자취 요리 자랑 -->
+                  <div class="col">
+                    <div class="show-food">
+                      <h3>FOOD</h3>
+                      <div class="card-group">
+                        <div class="card">
+                          <img src="/img/tomato-pasta.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title"><a href="#">간단한 토마토 파스타</a></h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          </div>
+                          <div class="card-footer">
+                            <button type="button" class="btn btn-update">게시글 수정</button>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img src="/img/fried-egg.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title"><a href="#">계란후라이 그 자체</a></h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          </div>
+                          <div class="card-footer">
+                            <button type="button" class="btn btn-update">게시글 수정</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- row 2 -->
+              <div class="row mt-4">
+                <div class="col">
+                  <!-- 자취방 자랑 -->
+                  <div class="show-room">
+                    <div class="card-group">
+                      <div class="card">
+                        <img src="/img/room3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><a href="#">그레이무드</a></h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-update">게시글 수정</button>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="/img/room4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><a href="#">화이트</a></h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-update">게시글 수정</button>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                          <li class="page-item"><a class="page-link" href="#">5</a></li>
+                
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                  </div>
+                </div>
+
+                
+                <!-- 자취 요리 자랑 -->
+                <div class="col">
+                  <div class="show-food">
+                    <div class="card-group">
+                      <div class="card">
+                        <img src="/img/food1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><a href="#">소세지 야채 볶음</a></h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-update">게시글 수정</button>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="/img/food2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><a href="#">치킨 마요 덮밥</a></h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-update">게시글 수정</button>
+                        </div>
+                      </div>
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                          <li class="page-item"><a class="page-link" href="#">5</a></li>
+                
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+
+      <!-- footer -->
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+          </ul>
+        </footer>
+      </div>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <title>자랑공간</title>
+    <style>
+      .btn-logout:hover {
+        background-color: white;
+        color: #D0B8A8;
+      }
+      .btn-logout {
+        background-color: #D0B8A8;
+        color: white;
+        margin-left: 1rem;
+      }
+      .card-img-top {
+        height: 15rem;
+        object-fit: cover;
+      }
+      .card-body {
+        height: 10rem;
+        object-fit: cover;
+      }
+
+      h1{
+          font-size: 1.5rem;
+          text-align: center;
+      }
+      p {
+          text-align: center;
+      }
+      h3 {
+        text-align: center;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+      }
+      a {
+        text-decoration-line: none;
+        color: #D0B8A8;
+      }
+      a:hover {
+        color: gray;
+      }
+
+      .show-feed-header {
+        padding: 2rem;
+      }
+      .show-button {
+        text-align: center;
+        padding: 1rem;
+      }
+      .btn-show-more {
+        background-color: white;
+        color: #D0B8A8;
+      }
+      .btn-show-more:hover {
+        background-color: #D0B8A8;
+        color: white;
+      }
+      .show-feed-btn-group {
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .btn-show-feed {
+        background-color: #D0B8A8;
+        color: white;
+        margin: 0.5rem;
+      }
+      .btn-show-feed:hover {
+        background-color: white;
+        color: #D0B8A8;
+      }
+      .carousel-inner {
+        text-align: center;
+      }
+
+      .btn-header-more {
+        background-color: #D0B8A8;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            슬기로운 자취생활
+          </a>
+    
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark"><span style="color:#D0B8A8;">자랑공간</span></a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">꿀팁공간</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">대화공간</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">질문공간</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">내 정보</a></li>
+          </ul>
+    
+          <div class="col-md-3 text-end">
+            정다은님,
+            <button type="button" class="btn btn-logout me-2">Logout</button>
+          </div>
+        </header>
+      </div>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="bd-placeholder-img" width="100%" height="500" src="/img/home.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></ㅑ>
+      
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1>따뜻한 내 방</h1>
+                  <p>Some representative placeholder content for the first slide of the carousel.</p>
+                  <p><a class="btn btn-header-more" href="#">상세보기</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="bd-placeholder-img" width="100%" height="500" src="/img/room.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+      
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>자취 공간</h1>
+                  <p>Some representative placeholder content for the second slide of the carousel.</p>
+                  <p><a class="btn btn-header-more" href="#">상세보기</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="bd-placeholder-img" width="100%" height="500" src="/img/fried-egg.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+      
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h1>맛있는 달걀 후라이</h1>
+                  <p>Some representative placeholder content for the third slide of this carousel.</p>
+                  <p><a class="btn btn-header-more" href="#">상세보기</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    
+      <!-- content -->
+      <div class="container">
+          <div class="show-feed">
+            <div class="show-feed-header">
+                <h1>자랑공간</h1>
+                <p>여러분의 자취 생활을 자랑해보세요!</p>
+                <div class="show-feed-btn-group">
+                  <a href="my-posts.html" class="btn btn-show-feed">나의 게시글 관리</a>
+                </div>
+            </div>
+            <div class="show-content">
+              <!-- row1 -->
+              <div class="row">
+                <div class="col">
+                  <!-- 자취방 자랑 -->
+                  <div class="show-room">
+                    <h3>ROOM</h3>
+                    <div class="card-group">
+                      <div class="card">
+                        <img src="/img/home.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><a href="room.html">따뜻한 내 방</a></h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">평범한대학생</small>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="/img/room.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><a href="#">나만의 작은 공간</a></h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">새내기</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 자취 요리 자랑 -->
+                <div class="col">
+                  <div class="show-food">
+                    <h3>FOOD</h3>
+                    <div class="card-group">
+                      <div class="card">
+                        <img src="/img/tomato-pasta.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><a href="food.html">간단한 토마토 파스타</a></h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">자취의신</small>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="/img/fried-egg.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><a href="#">계란후라이 그 자체</a></h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">요리고수</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- row 2 -->
+              <div class="row mt-4">
+                <div class="col">
+                  <!-- 자취방 자랑 -->
+                  <div class="show-room">
+                    <div class="card-group">
+                      <div class="card">
+                        <img src="/img/room3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><a href="#">그레이무드</a></h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">평범한대학생</small>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="/img/room4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><a href="#">화이트</a></h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">새내기</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 자취 요리 자랑 -->
+                <div class="col">
+                  <div class="show-food">
+                    <div class="card-group">
+                      <div class="card">
+                        <img src="/img/food1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><a href="#">소세지 야채 볶음</a></h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">자취의신</small>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="/img/food2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><a href="#">치킨 마요 덮밥</a></h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">요리고수</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 더보기 버튼 -->
+              <div class="show-button">
+                <div class="row">
+                  <div class="col show-room-btn">
+                    <button type="button" class="btn btn-show-more"><a href="rooms.html">더 보기</a></button>
+                  </div>
+                  <div class="col show-food-btn">
+                    <button type="button" class="btn btn-show-more"><a href="foods.html">더 보기</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+      
+
+      <!-- footer -->
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+          </ul>
+        </footer>
+      </div>
+
+      <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html>
